@@ -172,14 +172,14 @@ benchinit() {
 	# install speedtest-cli
 	while  [ ! -e 'speedtest.py' ]; do
 		echo " Installing Speedtest-cli ..."
-		wget --no-check-certificate https://raw.githubusercontent.com/yzlijie/SPDTST/master/speedtest.py > /dev/null 2>&1
+		wget --no-check-certificate https://raw.githubusercontent.com/sure15/SPDTST/master/speedtest.py > /dev/null 2>&1
 	done
 	chmod a+rx speedtest.py
 	
 	# install speedtest-cli(original version)
 	while  [ ! -e 'speedtest_original.py' ]; do
 		echo " Installing speedtest-cli(original version) ..."
-		wget --no-check-certificate https://raw.githubusercontent.com/yzlijie/SPDTST/master/speedtest_original.py > /dev/null 2>&1
+		wget --no-check-certificate https://raw.githubusercontent.com/sure15/SPDTST/master/speedtest_original.py > /dev/null 2>&1
 	done
 	chmod a+rx speedtest_original.py
 
