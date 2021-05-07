@@ -2,4 +2,4 @@
 jsDelivr CDN
 
 # 使用方法
-```wget vpstest.cn/it && bash it 或 wget git.io/vpstest && bash vpstest```
+```wget https://raw.githubusercontent.com/sure15/CDN/master/speedtest.sh && bash vpstest```
