@@ -5,3 +5,7 @@ jsDelivr CDN
 ```wget https://raw.githubusercontent.com/sure15/CDN/master/speedtest.sh && bash speedtest.sh```
 
 ```wget https://raw.githubusercontent.com/sure15/CDN/master/superbench2.sh && bash superbench2.sh```
+
+```wget https://raw.githubusercontent.com/sure15/CDN/master/superbench3.sh && bash superbench3.sh```
+
+
