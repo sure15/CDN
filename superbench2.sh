@@ -224,7 +224,7 @@ next() {
 
 speed_test(){
 	if [[ $1 == '' ]]; then
-		temp=$(python speedtest_original.py --share 2>&1)
+		temp=$(python speedtest_original.py --single --share 2>&1)
 		is_down=$(echo "$temp" | grep 'Download')
 		result_speed=$(echo "$temp" | awk -F ' ' '/results/{print $3}')
 		if [[ ${is_down} ]]; then
@@ -246,7 +246,7 @@ speed_test(){
 	        local cerror="ERROR"
 		fi
 	else
-		temp=$(python speedtest.py --server $1 --share 2>&1)
+		temp=$(python speedtest.py --single --server $1 --share 2>&1)
 		is_down=$(echo "$temp" | grep 'Download') 
 		if [[ ${is_down} ]]; then
 	        local REDownload=$(echo "$temp" | awk -F ':' '/Download/{print $2}')
