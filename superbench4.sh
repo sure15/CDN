@@ -293,7 +293,7 @@ speed_test(){
 
 print_speedtest() {
 	printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency" | tee -a $log
-	speed_test ''      'SpeedTest.com  '
+#	speed_test ''      'SpeedTest.com  '
     	speed_test '26352' 'Nanjing      CT'
 #     	speed_test '34115' 'TianJin      CT'
     	speed_test '17145' 'Hefei        CT'
