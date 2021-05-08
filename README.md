@@ -9,4 +9,6 @@ jsDelivr CDN
 ```curl https://raw.githubusercontent.com/sure15/CDN/master/superbench3.sh | bash ``` 多线程
  
  ```curl https://raw.githubusercontent.com/sure15/CDN/master/superbench4.sh | bash ``` 单线程 精简版
+ 
+  ```curl https://raw.githubusercontent.com/sure15/CDN/master/superbench5.sh | bash ``` 多线程 精简版
 
