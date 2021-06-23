@@ -11,19 +11,19 @@
 
 5、格式化
 
-`mkfs.ext4 -F /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331`
+>`mkfs.ext4 -F /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331`
 
 6、创建文件夹
 
-`mkdir /storage`
+>`mkdir /storage`
 
 7、挂载
 
-`mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage`
+>`mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage`
 
 8、设置开机/重启自动挂载
 
-`echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab`
+>`echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab`
 
 其他
 1、Buyvm家所有的KVM VPS均免费提供Directadmin面板，有需要的可以联系客服。
