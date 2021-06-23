@@ -5,26 +5,26 @@
 
 3、查看数据块编号(开通邮件里也有)
 
-Bash复制
-ls /dev/disk/by-id/
+
+`ls /dev/disk/by-id/`
 4、假设看到的结果是scsi-0BUYVM_SLAB_VOLUME-1331，那么1331就是数据块的id，或者后台也能直接看到。
 
 5、格式化
 
-Bash复制
-mkfs.ext4 -F /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331
+
+`mkfs.ext4 -F /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331`
 6、创建文件夹
 
-Bash复制
-mkdir /storage
+
+`mkdir /storage`
 7、挂载
 
-Bash复制
-mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage
+
+`mount -o discard,defaults /dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage`
 8、设置开机/重启自动挂载
 
-Bash复制
-echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
+
+`echo '/dev/disk/by-id/scsi-0BUYVM_SLAB_VOLUME-1331 /storage ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab`
 其他
 1、Buyvm家所有的KVM VPS均免费提供Directadmin面板，有需要的可以联系客服。
 
