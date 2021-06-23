@@ -9,3 +9,5 @@
 >`sudo apt-get update`
 
 >`sudo apt-get install qbittorrent-nox`
+
+>`@reboot qbittorrent-nox`
