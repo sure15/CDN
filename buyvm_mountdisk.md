@@ -5,7 +5,7 @@
 
 3、查看数据块编号(开通邮件里也有)
 
-`ls /dev/disk/by-id/`
+>`ls /dev/disk/by-id/`
 
 4、假设看到的结果是scsi-0BUYVM_SLAB_VOLUME-1331，那么1331就是数据块的id，或者后台也能直接看到。
 
